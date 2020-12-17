@@ -1,3 +1,6 @@
+require('dotenv').config()
+const client = require('./plugins/contentful')
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
