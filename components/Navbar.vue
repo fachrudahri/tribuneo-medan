@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar mb-6" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-    </a>
+    <nuxt-link class="navbar-item" to="/">
+      <img src="https://www.tribuneo.id/img/logo/logo2.png">
+    </nuxt-link>
 
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>

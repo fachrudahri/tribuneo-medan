@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container">
+    <div class="container is-fluid">
       <h2 class="title is-2">{{post.fields.title}}</h2>
       <hr>
       <div class="content" v-html="$md.render(post.fields.content)">
