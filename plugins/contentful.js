@@ -5,4 +5,6 @@ const client = contentful.createClient({
   accessToken: process.env.CTF_ACCESS_TOKEN
 })
 
+
+
 module.exports = client

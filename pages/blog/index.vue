@@ -1,14 +1,15 @@
 <template>
   <section>
-    <div class="container is-fluid">
+    <div class="container">
+      <div class="container is-fluid">
       <h3 class="mb-4 title is-4">Latest Posts</h3>
       <div class="columns is-multiline">
-        <div v-for="(post, index) in posts" :key="index" class="column is-3">
+        <div v-for="(post, index) in entries" :key="index" class="column is-3">
           <div class="card">
             <div class="card-image">
-              <figure class="image is-4by3">
+              <figure class="image is-1by1">
                 <img
-                  src="https://bulma.io/images/placeholders/1280x960.png"
+                  :src="asset[index].fields.file.url"
                   alt="Placeholder image"
                 />
               </figure>
@@ -23,6 +24,7 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
   </section>
 </template>
@@ -30,15 +32,21 @@
 <script>
 import client from '~/plugins/contentful'
 export default {
-  asyncData() {
-    return client
-      .getEntries({
-        content_type: 'post',
+  async asyncData() {
+    const asset = await client.getAssets()
+      .then((asset) =>{ return { assets: asset.items }
       })
+      .catch((e) => console.log(e))
+
+    const entries = await client.getEntries({content_type: 'post'})
       .then((entries) => {
         return { posts: entries.items }
       })
       .catch((e) => console.log(e))
+      return {
+        asset: asset.assets,
+        entries: entries.posts
+      }
   },
   head: {
     title: 'Latest Posts',

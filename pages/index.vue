@@ -52,21 +52,28 @@
         </div>
       </div>
     </section>
-    <section class="pt-6 pb-6 has-background-dark">
+    <section class="pt-6 pb-6 has-background-link">
       <div class="container">
         <div class="container is-fluid">
+          <h3 class="title is-3 has-text-centered has-text-light">New Posts</h3>
           <div class="columns is-multiline">
-            <div v-for="(post, index) in posts" :key="index" class="column is-4">
+            <div v-for="(post, index) in entries" :key="index" class="column is-4">
               <div v-if="index < 3">
                 <div class="card">
+                  <div class="card-image">
+                  <figure class="image is-1by1">
+                    <img :src="asset[index].fields.file.url" alt="Placeholder image">
+                  </figure>
+                </div>
                   <div class="card-content">
-                    <p class="title is-5">
+                    <p class="title is-5 no-mb">
                       {{ post.fields.title }}
                     </p>
-                    <div class="buttons">
+                    <small class="has-text-grey">{{ post.fields.date }}</small>
+                    <div class="buttons mt-3">
                       <nuxt-link
                         :to="`blog/${post.fields.slug}`"
-                        class="button is-primary is-light"
+                        class="button is-link is-light"
                         >Read More</nuxt-link
                       >
                     </div>
@@ -84,15 +91,21 @@
 <script>
 import client from '~/plugins/contentful'
 export default {
-  asyncData() {
-    return client
-      .getEntries({
-        content_type: 'post',
+  async asyncData() {
+    const asset = await client.getAssets()
+      .then((asset) =>{ return { assets: asset.items }
       })
+      .catch((e) => console.log(e))
+
+    const entries = await client.getEntries({content_type: 'post'})
       .then((entries) => {
         return { posts: entries.items }
       })
       .catch((e) => console.log(e))
+      return {
+        asset: asset.assets,
+        entries: entries.posts
+      }
   },
   head: {
     title: 'Home Tribun-eo Medan',

@@ -17,4 +17,7 @@ html {
     Arial,
     sans-serif;
 }
+.no-mb {
+  margin-bottom: 0px !important;
+}
 </style>
