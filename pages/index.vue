@@ -62,7 +62,11 @@
                 <div class="card">
                   <div class="card-image">
                   <figure class="image is-1by1">
-                    <img :src="asset[index].fields.file.url" alt="Placeholder image">
+                    <div v-for="(ast, index) in asset" :key="index">
+                      <div v-if="ast.fields.title == post.fields.title">
+                        <img :src="ast.fields.file.url" alt="Placeholder image">
+                      </div>
+                    </div>
                   </figure>
                 </div>
                   <div class="card-content">
