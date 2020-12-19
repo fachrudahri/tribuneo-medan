@@ -1,26 +1,28 @@
 <template>
   <nav class="navbar mb-6" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <nuxt-link class="navbar-item" to="/">
-      <img src="https://www.tribuneo.id/img/logo/logo2.png">
-    </nuxt-link>
+    <div class="container">
+      <div class="navbar-brand">
+        <nuxt-link class="navbar-item" to="/">
+          <img src="https://www.tribuneo.id/img/logo/logo2.png">
+        </nuxt-link>
 
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <nuxt-link to="/" class="navbar-item">Home</nuxt-link>
-        <nuxt-link to="/blog" class="navbar-item">Blog</nuxt-link>
-        </div>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <nuxt-link to="/" class="navbar-item">Home</nuxt-link>
+            <nuxt-link to="/blog" class="navbar-item">Blog</nuxt-link>
+            </div>
+          </div>
+        </div>
     </div>
-</nav>
+  </nav>
 </template>
 
 <script>
