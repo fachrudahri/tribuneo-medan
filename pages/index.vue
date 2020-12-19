@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="has-text-centered pt-5 pb-6">
+    <section class="container is-fluid has-text-centered pt-5 pb-6">
       <div class="columns is-multiline">
         <div class="column is-full">
           <h1 class="title is-1 has-text-link-dark">Welcome Everyone 😉</h1>
