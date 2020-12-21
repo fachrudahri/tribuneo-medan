@@ -1,17 +1,19 @@
 <template>
   <div>
-    <section class="container is-fluid has-text-centered pt-5 pb-6">
-      <div class="columns is-multiline">
-        <div class="column is-full">
-          <h1 class="title is-1 has-text-link-dark">Welcome Everyone 😉</h1>
-        </div>
-        <div class="column is-half is-offset-one-quarter">
-          <p class="has-text-grey">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam a vel
-            ipsa ut, ad repellendus voluptatem accusamus, veritatis assumenda
-            facilis neque saepe, incidunt illum praesentium corporis iusto rem
-            quo quasi.
-          </p>
+    <section class="container pt-5 pb-6">
+      <div class="container is-fluid">
+        <div class="columns is-vcentered is-multiline">
+          <div class="column is-6">
+            <h1 class="title is-1 has-text-link-dark">BETTER LIVING THROUGH TRIBUNEO MEDAN</h1>
+              <p class="subtitle is-6 has-text-grey pt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae consequatur sapiente omnis, totam maiores. Omnis saepe eos deserunt ut est voluptates dolorum, ex fugit tenetur consequatur.
+              </p>
+          </div>
+          <div class="column is-6">
+            <figure class="image is-square">
+              <img src="@/assets/scene.png">
+            </figure>
+          </div>
         </div>
       </div>
     </section>
