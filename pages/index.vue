@@ -4,7 +4,7 @@
       <div class="container is-fluid">
         <div class="columns is-vcentered is-multiline">
           <div class="column is-6">
-            <h1 class="title is-1 has-text-link-dark">BETTER LIVING THROUGH TRIBUNEO MEDAN</h1>
+            <h1 class="title is-1 has-text-link-dark has-text-weight-bold">BETTER LIVING THROUGH TRIBUNEO MEDAN</h1>
               <p class="subtitle is-6 has-text-grey pt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae consequatur sapiente omnis, totam maiores. Omnis saepe eos deserunt ut est voluptates dolorum, ex fugit tenetur consequatur.
               </p>
