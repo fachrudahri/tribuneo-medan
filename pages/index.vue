@@ -1,17 +1,17 @@
 <template>
   <div>
-    <section class="container pt-5 pb-6">
-      <div class="container is-fluid">
-        <div class="columns is-vcentered is-multiline">
+    <section class="pb-6 hero-background">
+      <div class="container">
+        <div class="container is-fluid columns is-vcentered is-multiline is-centered hero-padding">
           <div class="column is-6">
-            <h1 class="title is-1 has-text-link-dark has-text-weight-bold">BETTER LIVING THROUGH TRIBUNEO MEDAN</h1>
-              <p class="subtitle is-6 has-text-grey pt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repudiandae consequatur sapiente omnis, totam maiores. Omnis saepe eos deserunt ut est voluptates dolorum, ex fugit tenetur consequatur.
+            <h1 class="title is-1 has-text-white has-text-weight-bold">TRIBUN EO MEDAN</h1>
+              <p class="subtitle has-text-justified is-6 has-text-white pt-2">
+                Menjadi kelompok usaha penerbitan surat kabar, media online, dan percetakan daerah terbesar dan tersebar di Indonesia, melalui penyediaan informasi terpercaya untuk memberikan spirit baru dan mendorong terciptanya demokratisasi di daerah dengan menjalankan bisnis yang beretika, efisien, dan menguntungkan.
               </p>
           </div>
           <div class="column is-6">
-            <figure class="image is-square">
-              <img src="@/assets/scene.png">
+            <figure class="has-text-centered">
+              <img src="@/assets/Tribun-hero.png">
             </figure>
           </div>
         </div>
@@ -22,9 +22,9 @@
       <div class="container is-fluid level">
         <div class="level-item has-text-centered">
           <div class="mt-5">
-            <p class="heading">Piyan</p>
+            <p class="heading">Vian</p>
             <figure class="image is-128x128">
-              <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+              <img class="is-rounded" src="@/assets/vian.png">
             </figure>
           </div>
         </div>
@@ -32,7 +32,7 @@
           <div class="mt-5">
             <p class="heading">Fauzi</p>
             <figure class="image is-128x128">
-              <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+              <img class="is-rounded" src="@/assets/fauzi.png">
             </figure>
           </div>
         </div>
@@ -40,7 +40,7 @@
           <div class="mt-5">
             <p class="heading">Irul</p>
             <figure class="image is-128x128">
-              <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+              <img class="is-rounded" src="@/assets/irul.png">
             </figure>
           </div>
         </div>
@@ -48,7 +48,7 @@
           <div class="mt-5">
             <p class="heading">Isfan</p>
             <figure class="image is-128x128">
-              <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+              <img class="is-rounded" src="@/assets/isfan.png">
             </figure>
           </div>
         </div>
