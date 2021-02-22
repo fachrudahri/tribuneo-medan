@@ -61,7 +61,7 @@
           <div class="columns is-vcentered is-multiline is-centered">
             <div class="column is-4">
               <figure class="image">
-              <img src="@/assets/setiawan.png">
+              <img src="@/assets/team.svg">
             </figure>
             </div>
             <div class="column is-8">
@@ -86,7 +86,7 @@
           <div class="column">
             <div class="level-item has-text-centered">
               <figure class="image">
-                <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                <img src="@/assets/handshake.svg">
               </figure>
             </div>
             <p class="has-text-centered mt-3">Kami adalah patner yang dapat dipercaya untuk  solusi event anda</p>
@@ -94,7 +94,7 @@
           <div class="column">
             <div class="level-item has-text-centered">
               <figure class="image">
-                <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                <img src="@/assets/area.svg">
               </figure>
             </div>
             <p class="has-text-centered mt-3">Kami dapat mengcover area event di kota-kota besar di Indonesia</p>
@@ -102,7 +102,7 @@
           <div class="column">
             <div class="level-item has-text-centered">
               <figure class="image">
-                <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                <img src="@/assets/news.svg">
               </figure>
             </div>
             <p class="has-text-centered mt-3">Kami dapat mempublikasikan event anda baik cetak maupun online</p>
@@ -110,7 +110,7 @@
           <div class="column">
             <div class="level-item has-text-centered">
               <figure class="image">
-                <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                <img src="@/assets/ads.svg">
               </figure>
             </div>
             <p class="has-text-centered mt-3">Kami menyediakan tempat untuk outdoor advertising termasuk produksi, izin dan laporan</p>
@@ -118,7 +118,7 @@
           <div class="column">
             <div class="level-item has-text-centered">
               <figure class="image">
-                <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                <img src="@/assets/integration.svg">
               </figure>
             </div>
             <p class="has-text-centered mt-3">Portal media online kami terintegrasi secara nasional melalui TribunNews.com</p>
@@ -143,15 +143,9 @@
               </ul>
             </div>
             <div class="column is-6 content is-medium">
-              <ul>
-                <li>PROMOTION & LAUNCHING PRODUK</li>
-                <li>EXHIBITION</li>
-                <li>SEMINAR & TALKSHOW</li>
-                <li>GATHERING</li>
-                <li>AGENCY (Entertainment & Talent)</li>
-                <li>PRODUCTION (Event Equipment, Branding Production)</li>
-                <li>OUTDOOR ADVERTISING (Billboard, Baligho, Store Branding)</li>
-              </ul>
+              <figure>
+                <img src="@/assets/service.svg">
+              </figure>
             </div>
           </div>
         </div>
